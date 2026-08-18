@@ -26,3 +26,8 @@ FROM  fato_vendas;
 
 SELECT  avg(valor_total) AS TICKET_MEDIO
 FROM fato_vendas
+
+-- Exercício 07 - Liste todas as lojas cadastradas.
+
+SELECT nome_loja as LOJAS
+FROM dim_loja
