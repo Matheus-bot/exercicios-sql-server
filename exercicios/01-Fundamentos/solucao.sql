@@ -21,3 +21,8 @@ FROM dim_produto
 
 SELECT ROUND(SUM(valor_total),2)AS FATURAMENTO_TOTAL
 FROM  fato_vendas;
+
+-- Exercício 06 - Qual o ticket médio das vendas?
+
+SELECT  avg(valor_total) AS TICKET_MEDIO
+FROM fato_vendas
