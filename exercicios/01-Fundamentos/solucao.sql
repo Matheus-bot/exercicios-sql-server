@@ -36,3 +36,13 @@ FROM dim_loja
 
 SELECT nome_funcionario, cargo 
 FROM dim_funcionario
+
+-- Exercício 09 - Mostre as 10 primeiras vendas realizadas.
+-- Limitar o resultado às 10 primeiras linhas retornadas.
+
+select TOP 10 *
+FROM fato_vendas
+
+-- Exercício 10 - Mostre o maior valor de venda realizado.
+SELECT MAX(valor_total) AS MAIOR_VALOR_VENDA
+FROM fato_vendas
