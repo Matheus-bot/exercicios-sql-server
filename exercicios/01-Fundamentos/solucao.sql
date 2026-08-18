@@ -31,3 +31,8 @@ FROM fato_vendas
 
 SELECT nome_loja as LOJAS
 FROM dim_loja
+
+-- Exercício 08 - Liste todos os funcionários e seus cargos.
+
+SELECT nome_funcionario, cargo 
+FROM dim_funcionario
