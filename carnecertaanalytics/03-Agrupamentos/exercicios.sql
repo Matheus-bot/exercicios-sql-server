@@ -1,0 +1,1 @@
+-- 01 Mostre o ticket médio por loja. 
