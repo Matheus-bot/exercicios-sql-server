@@ -27,3 +27,11 @@ SELECT
 FROM dim_funcionario f
 JOIN dim_loja l ON f.id_loja = l.id_loja
 GROUP BY l.id_loja, l.nome_loja;
+
+-- 04 Mostre o faturamento por categoria de produto.
+
+SELECT p.categoria AS CATEGORIA,
+	  ROUND(SUM(i.quantidade*i.preco_unitario),2) AS FATURAMENTO 
+FROM dim_produto p
+JOIN fato_itens_venda i ON p.id_produto = i.id_produto
+GROUP BY p.categoria

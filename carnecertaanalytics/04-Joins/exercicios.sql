@@ -4,4 +4,6 @@
 
 -- 03 Mostre quantos funcionários existem em cada loja.
 
+-- 04 Mostre o faturamento por categoria de produto.
+
 
