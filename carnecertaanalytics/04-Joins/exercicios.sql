@@ -6,4 +6,5 @@
 
 -- 04 Mostre o faturamento por categoria de produto.
 
+-- 05 Mostre os 10 produtos mais vendidos em quantidade
 

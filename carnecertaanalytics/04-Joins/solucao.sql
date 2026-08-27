@@ -35,3 +35,13 @@ SELECT p.categoria AS CATEGORIA,
 FROM dim_produto p
 JOIN fato_itens_venda i ON p.id_produto = i.id_produto
 GROUP BY p.categoria
+
+-- 05 Mostre os 10 produtos mais vendidos em quantidade
+
+SELECT TOP 10 nome_produto AS NOME_PRODUTO, 
+        SUM(v.quantidade) AS QUANTIDADE
+FROM fato_itens_venda v
+JOIN dim_produto p 
+  ON p.id_produto = v.id_produto
+GROUP BY nome_produto 
+ORDER BY quantidade DESC
