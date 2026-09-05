@@ -45,3 +45,13 @@ JOIN dim_produto p
   ON p.id_produto = v.id_produto
 GROUP BY nome_produto 
 ORDER BY quantidade DESC
+
+-- 06 Mostre os 10 produtos que mais geraram receita.
+
+SELECT TOP 10
+	p.nome_produto,
+	ROUND(SUM(i.quantidade * i.preco_unitario) , 2) RECEITA
+FROM fato_itens_venda i
+JOIN dim_produto p ON p.id_produto = i.id_produto
+GROUP BY p.nome_produto
+ORDER BY RECEITA desc

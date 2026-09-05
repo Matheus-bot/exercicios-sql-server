@@ -8,3 +8,7 @@
 
 -- 05 Mostre os 10 produtos mais vendidos em quantidade
 
+-- 06 Mostre os 10 produtos que mais geraram receita.
+
+
+
