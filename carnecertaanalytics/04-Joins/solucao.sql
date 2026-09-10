@@ -55,3 +55,13 @@ FROM fato_itens_venda i
 JOIN dim_produto p ON p.id_produto = i.id_produto
 GROUP BY p.nome_produto
 ORDER BY RECEITA desc
+
+-- 07 Mostre os clientes que mais gastaram. Retornar:	nome cliente, valor total comprado 
+
+SELECT TOP 10 
+    c.nome_cliente, 
+    SUM(v.valor_total) AS valor_total_comprado
+FROM dim_cliente c
+JOIN fato_vendas v ON c.id_cliente = v.id_cliente
+GROUP BY c.nome_cliente
+ORDER BY valor_total_comprado DESC;

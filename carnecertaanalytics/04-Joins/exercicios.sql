@@ -10,5 +10,7 @@
 
 -- 06 Mostre os 10 produtos que mais geraram receita.
 
+-- 07 Mostre os clientes que mais gastaram. Retornar:	nome cliente, valor total comprado 
+
 
 
