@@ -12,5 +12,7 @@
 
 -- 07 Mostre os clientes que mais gastaram. Retornar:	nome cliente, valor total comprado 
 
+-- 08 Mostre quantas vendas cada funcionário realizou.
+
 
 

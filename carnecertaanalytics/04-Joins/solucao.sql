@@ -65,3 +65,20 @@ FROM dim_cliente c
 JOIN fato_vendas v ON c.id_cliente = v.id_cliente
 GROUP BY c.nome_cliente
 ORDER BY valor_total_comprado DESC;
+
+-- 08 Mostre quantas vendas cada funcionário realizou.
+
+SELECT 
+	f.nome_funcionario,
+	count(valor_total) AS quantidade_vendida
+FROM dim_funcionario f
+INNER JOIN fato_vendas v ON f.id_funcionario = v.id_funcionario
+GROUP BY f.nome_funcionario;
+
+
+SELECT 
+    f.nome_funcionario,
+    COUNT(*) AS quantidade_vendas
+FROM dim_funcionario f
+INNER JOIN fato_vendas v ON f.id_funcionario = v.id_funcionario
+GROUP BY f.nome_funcionario;
