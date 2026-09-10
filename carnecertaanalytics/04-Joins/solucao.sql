@@ -82,3 +82,12 @@ SELECT
 FROM dim_funcionario f
 INNER JOIN fato_vendas v ON f.id_funcionario = v.id_funcionario
 GROUP BY f.nome_funcionario;
+
+-- 09 Mostre o valor médio das vendas realizadas por funcionário.
+
+SELECT 
+    f.nome_funcionario,
+    AVG(v.valor_total) AS media_vendas 
+FROM dim_funcionario f
+INNER JOIN fato_vendas v ON f.id_funcionario = v.id_funcionario
+GROUP BY f.nome_funcionario;

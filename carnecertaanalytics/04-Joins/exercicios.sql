@@ -14,5 +14,6 @@
 
 -- 08 Mostre quantas vendas cada funcionário realizou.
 
+-- 09 Mostre o valor médio das vendas realizadas por funcionário.
 
 
