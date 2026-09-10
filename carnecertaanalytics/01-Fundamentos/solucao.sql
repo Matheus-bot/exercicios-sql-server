@@ -46,3 +46,10 @@ FROM fato_vendas
 -- Exercício 10 - Mostre o maior valor de venda realizado.
 SELECT MAX(valor_total) AS MAIOR_VALOR_VENDA
 FROM fato_vendas
+
+-- Exercício 11 - Mostre a média de preço de venda dos produtos por categoria.
+
+SELECT p.categoria,
+	AVG(p.preco_venda) AS MEDIA
+FROM dim_produto p
+GROUP BY p.categoria
