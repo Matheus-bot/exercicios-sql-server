@@ -91,3 +91,10 @@ SELECT
 FROM dim_funcionario f
 INNER JOIN fato_vendas v ON f.id_funcionario = v.id_funcionario
 GROUP BY f.nome_funcionario;
+
+ -- 10 Liste os produtos que possuem estoque abaixo de 30 unidades.
+ 
+ SELECT p.nome_produto, quantidade_disponivel
+ FROM dim_produto p 
+ INNER JOIN fato_estoque e ON e.id_produto = p.id_produto
+ WHERE e.quantidade_disponivel  < 30

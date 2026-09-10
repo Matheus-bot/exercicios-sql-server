@@ -16,4 +16,6 @@
 
 -- 09 Mostre o valor médio das vendas realizadas por funcionário.
 
+-- 10 Liste os produtos que possuem estoque abaixo de 30 unidades.
+
 
